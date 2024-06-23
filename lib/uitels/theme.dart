@@ -32,7 +32,7 @@ class GlobalTheme {
   static ThemeData darktheme = ThemeData(
       scaffoldBackgroundColor: Colors.black38,
       brightness: Brightness.dark,
-      primaryColor: Colors.teal,
+      primaryColor: Colors.black12,
       secondaryHeaderColor: Colors.grey,
       colorScheme: const ColorScheme.light(
           brightness: Brightness.dark,
@@ -42,15 +42,19 @@ class GlobalTheme {
           onTertiary: Color(0xffCB285B),
           onTertiaryContainer: Color(0xff7C7144)),
       appBarTheme: AppBarTheme(
-        color: Colors.lightGreen.shade400,
+        color: Colors.black12,
       ),
       textTheme: const TextTheme(
-          titleLarge: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: CupertinoColors.white,
+
+          bodyMedium: TextStyle(
+            fontSize: 25,
           ),
-          titleMedium: TextStyle(
-            fontWeight: FontWeight.w500,
-            color: CupertinoColors.white,
-          )));
-}
+          bodyLarge: TextStyle(
+              fontSize: 30,fontWeight: FontWeight.w500
+          ),
+          titleLarge: TextStyle(
+              fontWeight: FontWeight.bold, color: CupertinoColors.white),
+         titleMedium: TextStyle(
+              fontWeight: FontWeight.w500, color: CupertinoColors.white)
+             ));
+ }
